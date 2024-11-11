@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Segmentation Dashboard</title>
+    <!-- Load Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Customer Segmentation Dashboard</h1>
+
+    <div id="scatter-plot"></div>
+
+    <script>
+        // Data for scatter plot visualization (from the Python analysis, manually add the clusters)
+        var data = [{
+            x: [34, 45, 23, 36, 50, 29, 40, 33, 28, 48, 27, 52, 41, 30, 24],
+            y: [75000, 120000, 45000, 85000, 100000, 55000, 95000, 72000, 60000, 115000, 48000, 125000, 80000, 65000, 55000],
+            mode: 'markers',
+            type: 'scatter',
+            marker: {
+                color: [1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3], // Cluster labels (example)
+                colorscale: 'Viridis',
+                size: [85, 60, 90, 70, 50, 80, 65, 55, 95, 45, 60, 30, 75, 65, 70],
+                showscale: true
+            },
+            text: ['Customer 1001', 'Customer 1002', 'Customer 1003', 'Customer 1004', 'Customer 1005', 'Customer 1006', 'Customer 1007', 'Customer 1008', 'Customer 1009', 'Customer 1010', 'Customer 1011', 'Customer 1012', 'Customer 1013', 'Customer 1014', 'Customer 1015']
+        }];
+
+        var layout = {
+            title: 'Customer Segmentation (Interactive)',
+            xaxis: { title: 'Age' },
+            yaxis: { title: 'Annual Income' }
+        };
+
+        Plotly.newPlot('scatter-plot', data, layout);
+    </script>
+</body>
+</html>
