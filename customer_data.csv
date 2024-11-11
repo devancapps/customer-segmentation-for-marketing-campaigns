@@ -1,0 +1,4 @@
+CustomerID,Age,AnnualIncome,SpendingScore,Gender,Region,LoyaltyStatus,ProductCategory
+1001,34,75000,85,Male,North,1,Electronics
+1002,45,120000,60,Female,West,0,Apparel
+1003,23,45000,90,Male,East,1,Sports
