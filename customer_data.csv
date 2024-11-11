@@ -6,3 +6,8 @@ CustomerID,Age,AnnualIncome,SpendingScore,Gender,Region,LoyaltyStatus,ProductCat
 1005,50,100000,50,Male,North,0,Home
 1006,29,55000,80,Female,West,1,Apparel
 1007,40,95000,65,Male,South,0,Electronics
+1008,33,72000,55,Female,East,1,Sports
+1009,28,60000,95,Male,West,1,Sports
+1010,48,115000,45,Female,North,0,Apparel
+1011,27,48000,60,Female,South,1,Home
+1012,52,125000,30,Male,East,0,Electronics
